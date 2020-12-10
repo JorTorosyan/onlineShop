@@ -1,0 +1,43 @@
+.collapse-container {
+	max-width: 220px;
+	.label {
+		font-size: 1.3rem;
+	}
+}
+.gEORtC {
+	font-size: 0.9rem !important;
+}
+.ant-collapse {
+	// max-width: 220px !important;
+	background: white !important;
+}
+.ant-collapse > .ant-collapse-item {
+	padding: 0 13px 0 0 !important;
+	border-bottom: 1px solid #d9d9d9 !important;
+	&:last-child {
+		border-bottom: none !important;
+	}
+}
+.collapse-el {
+	border-bottom: none !important;
+}
+.ant-collapse-content-box {
+	padding: 0 5px !important;
+}
+.ant-collapse-content {
+	padding-bottom: 15px;
+}
+
+.ant-collapse-header {
+	font-size: 1.3rem;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+	padding-top: 0 !important;
+	display: flex;
+	flex-direction: column;
+}
+.panel_text {
+	font-size: 14px;
+	text-transform: lowercase;
+	font-weight: 400;
+}

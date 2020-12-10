@@ -1,0 +1,111 @@
+$red: #ae0814;
+@mixin links{
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 6px;
+    &:hover{
+        color: $red;
+    }
+}
+@mixin headingRed{
+    color: $red;
+    text-decoration: none;
+    margin-bottom: 7px;
+    font-size: 20px;
+    // font-family: 'Open Sans','Open Sans';
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid $red;
+}
+.container-menu{
+    box-shadow: 0 8px 16px -13px #808080d9;
+    -webkit-box-shadow: 0 8px 16px -13px #808080d9;
+    -moz-box-shadow: 0 8px 16px -13px #808080d9;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: 0;
+    top: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    .item{
+        flex-basis: 19%;
+        padding: 30px 30px 0;
+        h3{
+            margin-bottom: 10px;
+            font-size: 23px;
+            // font-family: 'Open Sans','Open Sans';
+            text-transform: uppercase;
+            font-weight: 500;
+            border-bottom: 2px solid #b7b7b7;
+            color: #181818;
+            margin-top: 0;
+        }
+        a{
+            @include links;
+        }
+        .heading{
+            @include headingRed;
+        }
+    }
+    .slider{
+        flex-basis: 30%;
+    }
+    .nav-1{
+        background-color: #F5F4F2;
+        h3{
+
+        }
+        a{
+            img{
+                width: 12px;
+                float: right;
+            }
+        }
+    }
+    .nav-2{
+        position: relative;
+        img{
+            position: absolute;
+            left: 6px;
+            top: 28px;
+        }
+    }
+    .slider{
+        img{
+            width: 80%;
+            height: 300px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px #ddd;
+        }
+    }
+}
+.slide-carousel{
+    .VueCarousel-navigation-prev{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+    h4{
+        color: #000;
+        text-transform: uppercase;
+        font-size: 22px;
+        width: 90%;
+        border-top: 2px solid #bbb;
+        border-bottom: 2px solid #bbb;
+        display: block;
+        margin: 0 auto;
+        padding: 5px 0;
+        font-weight: 500;
+        text-align: center;
+    }
+}

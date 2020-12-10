@@ -1,0 +1,18 @@
+.dashboard-container {
+	display: flex;
+	margin-top: 100px;
+	width: 87.8%;
+	margin: 30px auto 0;
+	max-width: 1185px;
+	@media (max-width: 992px) {
+		margin-top: 0;
+	}
+	.my-dashbord-content {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.dashboard-container {
+		flex-direction: column;
+	}
+}

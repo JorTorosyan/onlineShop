@@ -1,0 +1,64 @@
+.compare-and-wish-list-content {
+    margin-top: 20px;
+    width: 176px;
+    .compare-product {
+        padding: 20px;
+        border: 2px solid #eee !important;
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+     p{
+         
+            margin-top: 15px; 
+            margin-bottom: 0;
+     }
+        h2 {
+            margin: 0;
+            margin-bottom: 3px;
+            font-size: 1.7rem;
+        }
+        .line {
+            height: 1px;
+            background-color: #eee;
+            width: 100%;
+        }
+    }
+    .my-wish-lsit-content {
+        color: #333333;
+        p{
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        .my-wish-list{
+            font-size: 18px;
+        }
+        .line {
+            height: 1px;
+            background-color: #eee;
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+.compare-and-wish-list-content {
+    width: 95%;
+    min-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 416px){
+ .compare-and-wish-list-content {
+    width: 95%;
+    min-width: 320px;
+    .compare-product{
+        background: #eaeaea;
+    }
+ }
+
+}
+@media only screen and (max-width: 361px){
+.compare-and-wish-list-content {
+   width: 95%;
+   min-width: 300px;
+}
+}

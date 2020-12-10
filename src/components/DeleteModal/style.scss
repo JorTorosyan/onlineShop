@@ -1,0 +1,16 @@
+.ant-modal-footer {
+	.ant-btn {
+		display: none;
+	}
+	.ant-btn-primary {
+		background-color: #ae0814 !important;
+		display: block !important;
+		text-align: right;
+		border-color: #ae0814 !important;
+		margin-left: auto;
+		margin-right: 8px;
+	}
+	&:first-child {
+		display: none !important;
+	}
+}

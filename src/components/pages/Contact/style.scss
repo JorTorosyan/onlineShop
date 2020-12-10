@@ -1,0 +1,72 @@
+.contact-container {
+	width: 87.8%;
+	margin: 0px auto 0;
+	max-width: 1185px;
+	h1 {
+		margin-top: 40px;
+		color: #333333;
+		font-weight: normal;
+	}
+	form {
+		padding: 7px 0px;
+		display: flex;
+		flex-direction: column;
+		max-width: 870px;
+		.err-message-wrapper {
+			color: #e02b27;
+			font-size: 12px;
+		}
+		button {
+			background: #ae0814;
+			font-size: 15px;
+			color: #fff;
+			border: none;
+			padding: 4px 5px;
+			cursor: pointer;
+			width: 70px;
+			text-transform: uppercase;
+			margin-top: 30px;
+			&:hover {
+				background-color: #be3943;
+			}
+		}
+		@media only screen and (max-width: 420px) {
+			button {
+				margin-top: 10px;
+			}
+		}
+		label {
+			color: #333333;
+			font-size: 15px;
+			font-weight: bold;
+			padding-bottom: 5px;
+			position: relative;
+			&::after {
+				content: '*';
+				color: #e02b27;
+				font-size: 1.2rem;
+				margin: 0 0 0 5px;
+				position: absolute;
+				top: 0;
+			}
+		}
+		input {
+			height: 30px;
+			padding: 0px 30px 0px 12px;
+			border: 1px solid #c2c2c2;
+			margin-bottom: 12px;
+
+			&::placeholder {
+				font-size: 14px;
+			}
+
+			&:focus,
+			&:active {
+				outline: none;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		margin-top: 0;
+	}
+}

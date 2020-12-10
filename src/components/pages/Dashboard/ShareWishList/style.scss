@@ -1,0 +1,30 @@
+.share_wish_list {
+	padding-left: 30px;
+	width: 100%;
+	@media screen and (max-width: 700px) {
+		width: 100%;
+		padding: 0;
+		margin-top: 20px;
+	}
+	.textArea_wrap {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	// .wish_list_wrap {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// }
+	h1 {
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #444;
+		font-size: 2rem;
+		margin-top: -6px;
+		margin-bottom: 8px;
+	}
+	h2 {
+		padding: 0 0 5px;
+		border-bottom: 1px solid #eee;
+		font-size: 1.3rem;
+	}
+}

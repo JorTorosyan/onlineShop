@@ -1,0 +1,109 @@
+@import '../../../assets/styles/mixins.scss';
+  .container-best{
+    background-color:#f7f7f7;
+    .wrapper{
+      // background: url('https://remedyliquor.com/pub/media2/bg.png') no-repeat center top;
+      background-size: contain;
+      padding-top: 80px;
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .item{
+        flex-basis: 30%;
+      }
+      .img-item{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 35%;
+        text-align: center;
+        img{
+          height: 385px;
+        }
+      }
+      .description{
+        text-align: center;
+        p{
+          font-size: 16px;
+          color: #666;
+        }
+        .product{
+          margin: 40px 0 30px 0;
+          font-size: 24px;
+          color: #292825;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          line-height: 1;
+          &:hover{
+            color: $red
+          }
+        }
+        button{
+          font-size: 14px;
+          border-radius: 0;
+          display: block;
+          color: #fff;
+          text-transform: uppercase;
+          margin: auto;
+          background: #ae0814;
+          border: 2px solid #ae0814;
+          padding: 8px 30px;
+        }
+        h4{
+          display: block;
+          text-align: center;
+          font-family: playfair Display;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 42px;
+          color: $red;
+          margin-top: 0;
+          margin-bottom: 20px;
+          position: relative;
+          &:after{
+            content: "";
+            width: 50px;
+            height: 4px;
+            background: #e4e4e4;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+          }
+        }
+        .price{
+          font-weight: 600;
+          line-height: 25px;
+          margin: 5px 0;
+          color: $red;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px){
+    .container-best{
+      padding: 35px 0 0 0;
+      .wrapper{
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .description{
+          h4 {
+            margin-bottom: 40px;
+            font-size: 32px;
+          }
+        }
+        .item{
+          flex-basis: 100%;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+  }

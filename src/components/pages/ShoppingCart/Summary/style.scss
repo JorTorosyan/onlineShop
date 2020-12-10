@@ -1,0 +1,106 @@
+.summary {
+	border: 1px solid #ddd;
+	background: #f7f7f7;
+	color: #333;
+	padding: 10px;
+	h2 {
+		color: #af3024;
+		padding: 20px 8px;
+		border-bottom: 1px solid #ddd;
+		font-size: 21px;
+	}
+	.estimation {
+		.discount-hidden {
+			text-align: center;
+			padding: 20px 10px;
+			input {
+				margin: auto;
+				padding: 5px;
+			}
+			label {
+				font-size: 16px;
+				margin-right: 10px;
+			}
+		}
+		.opening-div {
+			padding: 20px 8px;
+			p {
+				font-size: 12px;
+			}
+			label {
+				font-weight: 600;
+				margin-top: 20px !important;
+			}
+			input,
+			select {
+				margin: 6px 0;
+				padding: 6px 0 10px 0;
+				display: block;
+				border: 1px solid #c2c2c2;
+				background-color: #fff;
+				&:focus {
+					outline: none;
+				}
+			}
+			input:not(input[type='number']) {
+				width: 90%;
+			}
+			select {
+				width: 90% !important;
+			}
+		}
+		.toggler {
+			border-bottom: 1px solid #ddd;
+			padding: 20px 8px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			cursor: pointer;
+			p {
+				font-size: 18px;
+				font-weight: normal;
+				margin: 0;
+				margin-right: 8px;
+			}
+		}
+		input {
+			display: block;
+			border: 1px solid #c2c2c2;
+			background-color: #fff;
+			&:focus {
+				outline: none;
+			}
+		}
+		button {
+			margin-top: 10px;
+			// margin-left: auto;
+			margin-right: 12px;
+			display: block;
+			margin: auto;
+			margin-top: 15px;
+			max-width: 400px;
+			text-transform: uppercase;
+			background-color: #ae0814;
+			color: #fff;
+			font-size: 14px;
+			border: none;
+			padding: 5px 20px;
+			cursor: pointer;
+			font-family: 'Open Sans', sans-serif;
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	.red-btn {
+		color: #fff;
+		background-color: #af3025;
+		padding: 10px 10px;
+		width: 195px;
+		outline-style: none;
+		border: none;
+		transition: all 0.3s ease-out;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.news-subsc-container {
+    padding-left: 30px;
+    width: 100%;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #444;
+        font-size: 2rem;
+        margin-top: -6px;
+        margin-bottom: 8px;
+    }
+    h2 {
+        padding: 0 0 5px;
+        border-bottom: 1px solid #eee;
+        font-size: 1.3rem;
+    }
+    button {
+        background: #ae0814;
+        font-size: 15px;
+        color: #fff;
+        border: none;
+        padding: 8px 5px;
+        cursor: pointer;
+        width: 70px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        &:hover {
+            background-color: #be3943;
+        }
+    }
+    .generate-sub {
+        display: flex;
+        align-items: baseline;
+        margin: 25px 0;
+        p {
+            color: #212529;
+            padding: 0 11px;
+            font-size: 15px;
+            cursor: pointer;
+            &:hover {
+                color: #af3025;
+            }
+        }
+    }
+}

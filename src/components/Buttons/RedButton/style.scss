@@ -1,0 +1,26 @@
+.red_btn {
+	padding: 10px 15px;
+	margin-top: 16px;
+	border: none;
+	color: #fff;
+	background: #ae0814;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	outline-style: none !important;
+	&.disable {
+		opacity: 0.6;
+	}
+
+	&:hover {
+		background-color: #be3943;
+	}
+	&.out_of_stock {
+		color: #ae0814;
+		background: rgb(233, 226, 200);
+		text-transform: uppercase;
+		text-transform: none;
+		font-weight: 600;
+	}
+}

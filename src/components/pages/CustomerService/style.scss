@@ -1,0 +1,40 @@
+.CustomerService-container {
+	display: flex;
+	width: 87.8%;
+	margin: 0px auto 0;
+	margin-top: 18px;
+	justify-content: space-between;
+	max-width: 1185px;
+	@media (max-width: 992px) {
+		margin-top: 0;
+	}
+	.CustomerService-content {
+		padding-left: 6%;
+		ul {
+			li {
+				margin-bottom: 10px;
+				font-size: 16px;
+			}
+		}
+		h1 {
+			font-size: 3em;
+		}
+		article {
+			color: #333333;
+			font-size: 15px;
+			margin-bottom: 24px;
+		}
+		p {
+			color: #333333;
+			font-size: 15px;
+			font-weight: bold;
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	.CustomerService-container {
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+}

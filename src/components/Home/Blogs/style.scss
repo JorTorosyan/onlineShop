@@ -1,0 +1,130 @@
+$red: #ae0814;
+  .blog-wrapper{
+    padding: 60px 0 45px 0;
+    h4 {
+    display: block;
+    text-align: center;
+    font-family: playfair Display;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 46px;
+    background-color: #fff;
+    color: $red;
+    margin-bottom: 40px;
+    &:after {
+      content: "";
+      width: 50px;
+      height: 4px;
+      background: #e4e4e4;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+  }
+  .slick-slide {
+    width: 80%;
+    margin: auto;
+    a{
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 20px;
+      color: #444343;
+      text-transform: capitalize;
+      &:hover{
+        color: $red
+      }
+      &:focus{
+        outline: none;
+      }
+      p{
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 3;
+        margin: auto;
+      }
+      img{
+        margin: 0 auto 10px;
+        display: block;
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+      }
+    }
+  }
+  .slick-slider{
+    width: 80%;
+    margin: auto;
+  }
+    button{
+    cursor: pointer;
+    border-radius: 0;
+    background: #ae0814;
+    border: none;
+    color: #fff;
+    padding: 13px 30px;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    &:hover{
+      background-color: #be3943;
+    }
+  }
+    .container-btn{
+    margin-top: 40px;
+    text-align: center;
+  }
+  }
+  
+  @media (max-width: 568px) {
+    .blog-wrapper .slide-carousel a img{
+      width: 100%;
+    }
+    .blog-wrapper .slide-carousel a p{
+      max-width: unset;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 992px) {
+    .blog-wrapper{
+      padding: 35px 0 0 0;
+      h4 {
+        margin-bottom: 40px;
+        font-size: 32px;
+      }
+    }
+      .blog-wrapper .slide-carousel a p{
+        font-size: 16px;
+        max-width: 200px;
+        margin: auto;
+      }
+  }
+
+  @media (min-width: 568px) and (max-width: 768px) {
+    .blog-wrapper .slide-carousel a{
+      margin: 0 5px;
+      img{
+        width: 214px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1154px) {
+    .blog-wrapper{
+      .slide-carousel{
+        width: 90%;
+        a{
+          margin: 0 5px;
+          img{
+            width: 230px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }

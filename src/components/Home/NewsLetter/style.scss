@@ -1,0 +1,129 @@
+.newsletter-container {
+	position: relative;
+	.loader_wrap {
+		position: absolute;
+		top: -35px;
+		left: 0;
+		width: 100%;
+	}
+	.loader {
+		text-align: center;
+		background: white;
+		width: 100%;
+		top: 135px;
+		width: fit-content;
+		margin-left: 50%;
+		z-index: 100000;
+		background: transparent;
+	}
+	.newsletter {
+		padding: 30px 0;
+		background-color: #d5d5d5;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+
+		p {
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 500;
+			font-family: playfair display;
+			margin-right: 30px;
+			margin-bottom: 0;
+			margin-bottom: 0;
+		}
+		form {
+			display: flex;
+			button {
+				text-transform: capitalize;
+				border-radius: 0;
+				background: #ae0814;
+				border: none;
+				color: #fff;
+				padding: 10px 15px 10px 15px;
+				font-size: 14px;
+				height: 40.5px;
+				cursor: pointer;
+				&:hover {
+					background-color: #be3943;
+				}
+			}
+			.input-err-message-wrapper {
+				position: relative;
+				.err-message-wrapper {
+					position: absolute;
+					color: #e02b27;
+					padding-top: 2px;
+					font-size: 12px;
+				}
+				input {
+					height: 41px;
+					padding-left: 15px;
+					border: none;
+					background-color: #fff;
+					@media screen and (min-width: 500px) {
+						width: 400px;
+					}
+					&::placeholder {
+						color: #ddd;
+					}
+					&:focus {
+						-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+						-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+						box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+						outline: none;
+					}
+				}
+			}
+		}
+		@media (max-width: 560px) {
+			input {
+				width: 200px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 560px) and (max-width: 868px) {
+		.newsletter {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p {
+				margin-bottom: 15px;
+			}
+			input {
+				margin-bottom: 20px;
+				width: 300px;
+			}
+		}
+	}
+	@media only screen and (max-width: 560px) {
+		.newsletter {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// width: 286px;
+			margin-bottom: 20px;
+
+			p {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.newsletter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		button {
+			padding: 5px;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+}

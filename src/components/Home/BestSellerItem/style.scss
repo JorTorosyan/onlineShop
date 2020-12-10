@@ -1,0 +1,49 @@
+@import '../../../assets/styles/mixins.scss';
+
+  .wrapper-bsi{
+    width: 100px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    img{
+      width: 100%;
+      border: 2px solid #ddd;
+      margin-right: 20px;
+    }
+    a{
+      color: #333;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 7px;
+      display: -webkit-box;
+      // height: 66px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:after{
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #e4e4e4;
+        position: relative;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+    span{
+      display: block;
+    }
+    .price{
+      color: #ae0814;
+      font-size: 20px;
+    }
+    .name{
+      color: $darkerGray;
+      font-size: 14px;
+    }
+  }

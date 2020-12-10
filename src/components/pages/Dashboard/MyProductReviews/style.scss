@@ -1,0 +1,52 @@
+.myProductReviews-container{
+    padding-left: 30px;
+    width: 100%;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #444;
+        font-size: 2rem;
+        margin-top: -6px;
+        margin-bottom: 8px;
+    }
+    .message-info {
+        margin: 0 0 10px;
+        padding: 10px 20px;
+        display: block;
+        line-height: 1.2em;
+        font-size: 14px;
+        background: #fdf0d5;
+        color: #6f4400;
+        padding-left: 40px;
+        position: relative;
+        span {
+            &::before {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 28px;
+                line-height: 28px;
+                color: #c07600;
+                content: '\e602';
+                font-family: "icons-blank-theme";
+               
+                margin: -14px 0 0;
+                vertical-align: middle;
+                display: inline-block;
+                font-weight: 400;
+                overflow: hidden;
+              
+                left: 0;
+                top: 18px;
+                width: 40px;
+                position: absolute;
+                text-align: center;
+            }
+        }
+    }
+}
+

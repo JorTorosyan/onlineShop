@@ -1,0 +1,100 @@
+.item {
+	margin-bottom: 40px;
+	background: #fff;
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+	padding: 18px 8px;
+	flex-basis: 32%;
+	height: fit-content;
+	h3 {
+		padding: 10px 8px;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+	.content {
+		border: 1px solid #ccc;
+		padding: 8px 0;
+		.method-wrapper {
+			padding: 0 8px;
+			display: flex;
+			justify-content: space-between;
+			span {
+				flex-basis: 18%;
+			}
+		}
+		#insurance {
+			padding: 0 8px;
+			span {
+				font-weight: 600;
+			}
+		}
+		.insurance-content {
+			padding: 0 8px;
+			display: flex;
+			flex-direction: column;
+			input {
+				width: auto;
+				display: inline-block;
+			}
+		}
+	}
+	.third-content {
+		height: 300px;
+		overflow-y: auto;
+	}
+	.third-column-wrapper {
+		padding: 10px 8px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.first-column {
+		padding: 8px;
+	}
+	.checklist-content {
+		padding-bottom: 81px;
+	}
+	&.payment-method {
+		.credit-card-part {
+			display: block;
+			.img-wrapper-payments {
+				margin: 20px 0;
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+		label {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			span {
+				margin-right: 10px;
+				margin-left: 6px;
+			}
+			a {
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+		input {
+			display: inline-block;
+			width: auto;
+			margin-right: 8px;
+			margin-bottom: 0;
+		}
+		.address-verification {
+			label {
+				margin-bottom: 0;
+			}
+			input {
+				margin-bottom: 20px;
+			}
+		}
+		.payment-btn {
+			button {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

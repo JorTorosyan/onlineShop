@@ -1,0 +1,43 @@
+.associated-container {
+	color: #333333;
+	width: 87.8%;
+	margin: 0px auto 0;
+	margin-top: 18px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1185px;
+	p {
+		margin-top: 20px;
+		font-size: 15px;
+	}
+	.text {
+		color: #333333;
+		img {
+			width: 100%;
+		}
+		@media (max-width: 1200px) {
+			img {
+				width: 90%;
+			}
+		}
+		@media (max-width: 769px) {
+			img {
+				width: 80%;
+			}
+		}
+		@media (max-width: 500px) {
+			img {
+				width: 95%;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.associated-container {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}

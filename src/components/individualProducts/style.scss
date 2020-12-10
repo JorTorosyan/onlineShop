@@ -1,0 +1,133 @@
+$red: #ae0814;
+.settings-container {
+  width: 100%;
+  text-align: center;
+  .wrapper {
+    font-size: 16px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    align-items: flex-start;
+
+
+    @media only  screen and (max-width: 1025px){
+      #pagination{
+        margin: auto;
+       margin-top: 20px; 
+      }
+    }
+
+    .grid-icon {
+      cursor: pointer;
+      position: relative;
+      margin-right: 8px;
+      box-sizing: content-box;
+      padding-right: 10px;
+      border-right: 1px solid $red;
+      padding-top: 3px;
+    }
+    .list-icon {
+      cursor: pointer;
+      padding-top: 3px;
+      box-sizing: content-box;
+      margin-right: 10px;
+    }
+    .text-xs-center {
+      ul {
+        color: rgba(0, 0, 0, 0.65);
+        display: -webkit-box;
+        display: flex;
+        .next {
+          border: 1px solid #ddd;
+          color: #333;
+          background-color: #eaeaea;
+        }
+        .previous {
+          border: 1px solid #ddd;
+          color: #333;
+          background-color: #eaeaea;
+        }
+        .selected {
+          background: $red;
+          a {
+            color: #fff;
+          }
+        }
+        li {
+          list-style-type: none;
+          padding: 0px 9px;
+          margin: 0 5px;
+          a {
+            color: rgba(0, 0, 0, 0.65);
+          }
+        }
+      }
+    }
+    label {
+      font-size: 16px;
+      display: inline-block;
+    }
+    select {
+      display: inline-block;
+      margin: 0 16px;
+      width: 144px;
+      color: #979797;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 0 8px;
+      box-shadow: 0 2px 8px -5px;
+      &:focus {
+        outline: none;
+      }
+    }
+    #showNumber {
+      width: 90px;
+    }
+  }
+  @media (max-width: 850px) {
+    .wrapper {
+      font-size: 14.5px;
+      #sortby {
+        width: 120px;
+      }
+      #show {
+        width: 40px;
+      }
+    }
+  }
+  @media (max-width: 415px) {
+    .wrapper {
+      font-size: 14px;
+      #sortby {
+        width: 100px;
+      }
+      #show {
+        width: 45px;
+      }
+    }
+  }
+  @media (max-width: 376px) {
+    .wrapper {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 568px) {
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 415px) {
+    .wrapper {
+      #list {
+        display: none;
+      }
+    }
+  }
+}

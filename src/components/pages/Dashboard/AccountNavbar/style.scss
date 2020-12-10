@@ -1,0 +1,45 @@
+.account-navbar-container {
+    color: #444;
+    .navbar-content {
+        border: 2px solid #af3025 !important;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0;
+    @media screen and (max-width: 700px){
+        margin-top: 15px;
+        }
+        .header {
+            font-weight: 700;
+            line-height: 1.1;
+            font-size: 1.0rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            min-width: 226px;
+            border-bottom: 2px solid #f1f1f1;
+            padding: 0 0 12px;
+        }
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+           
+            .checked{
+                font-weight: 700;
+                font-size: 15px;
+                pointer-events: none;
+               
+            }
+            li {
+                color: #444;
+                list-style: none;
+                padding: 6px 0;
+               
+                
+                a {
+                    color: #444;
+                   font-size: 15px;
+                 }
+            }
+          
+        }
+    }
+}

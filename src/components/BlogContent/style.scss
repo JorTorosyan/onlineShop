@@ -1,0 +1,20 @@
+.column {
+	.loader {
+		text-align: center;
+		margin-top: 10%;
+	}
+	.post {
+		margin-bottom: 45px;
+		.btn-wrapper {
+			a {
+				background: #af3025;
+				color: #fff;
+				border-color: #af3025;
+				text-decoration: none;
+				padding: 3px 12px 6px 12px;
+				display: inline-block;
+				border-radius: 30px;
+			}
+		}
+	}
+}

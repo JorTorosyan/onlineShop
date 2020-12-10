@@ -1,0 +1,205 @@
+.container-mobile {
+  display: flex;
+  padding: 4px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .menu img,
+  .cart img {
+    width: 26px;
+  }
+  .logo {
+    line-height: 0;
+    img {
+      max-width: 100px;
+    }
+  }
+  @media (max-width: 1250px){
+    .logo{
+      img {
+        max-width: 150px;
+      }
+    }
+   }
+   @media (max-width: 450px){
+    .logo{
+      img {
+        max-width: 100px;
+      }
+    }
+   }
+}
+.navigation-bar {
+  -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+  position: absolute;
+  top: 36px;
+  z-index: 9;
+  width: 70%;
+  max-width: 310px;
+  -webkit-transition: left 0.4s ease;
+  -moz-transition: left 0.4s ease;
+  -ms-transition: left 0.4s ease;
+  -o-transition: left 0.4s ease;
+  transition: left 0.4s ease;
+  background-color: #333333;
+  .my-wish-list-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    a {
+      color: #fff;
+    }
+  }
+  .spirits-type-content {
+    display: none;
+    background: #3c3c3c !important;
+  }
+  .nav-items {
+    border-top: 1px solid #464545;
+    padding: 12px;
+    text-transform: capitalize;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+
+    a {
+      margin: 0 2px;
+      color: #fff;
+      text-decoration: none;
+
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .add {
+      display: inline-block;
+      cursor: pointer;
+      width: 45px;
+      text-align: center;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        height: 49px;
+        top: -12px;
+        left: 0px;
+        width: 1px;
+        background: #464545;
+      }
+      img {
+        width: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .menu-label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+    .close {
+      position: relative;
+      padding: 0;
+      height: 38px;
+      background-color: #333333;
+      cursor: pointer;
+      div {
+        -webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.75);
+        box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.75);
+        position: absolute;
+        background-color: #ae0814;
+        padding: 7px 11px;
+        cursor: pointer;
+        right: -34px;
+        top: 49px;
+
+        img {
+          width: 12px;
+          vertical-align: baseline !important;
+        }
+      }
+    }
+  }
+  span {
+    flex-basis: 50%;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  .menu-nav {
+    color: #ae0814;
+    border-right: 1px solid #ddd;
+  }
+  .sub-wrapper-wine,
+  .spirits-type-content,
+  .beer-type-content,
+  .beer-type-content,
+  .pre-type-content {
+    display: none;
+    background: #3c3c3c !important;
+    padding: 0;
+    .sub-fNameoldered-wrapper {
+      display: none;
+    }
+    .sub-item {
+      a {
+        padding-left: 24px;
+        padding-right: 0;
+      }
+    }
+  }
+}
+.wrapper-mobile {
+  position: relative;
+  box-shadow: 0 0 5px 0 #9e9e9eb0;
+  z-index: 9;
+}
+.sub-foldered-wrapper {
+  display: none;
+}
+
+.active {
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .wrapper-mobile {
+    display: none;
+  }
+  .container-mobile {
+    display: none;
+  }
+  .navigation-bar {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .navigation-bar {
+    top: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .navigation-bar {
+    top: 0px;
+    max-width: 420px;
+  }
+}
+@media (max-width: 420px) {
+  .navigation-bar {
+    top: 0px;
+  }
+}

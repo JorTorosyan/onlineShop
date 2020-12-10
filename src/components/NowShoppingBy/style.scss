@@ -1,0 +1,21 @@
+.now-shopping-by {
+  margin-top: 10px;
+  ul {
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  li {
+    display: flex;
+    vertical-align: baseline;
+    span {
+      margin-left: 6px;
+      font-weight: bold;
+    }
+  }
+}
+

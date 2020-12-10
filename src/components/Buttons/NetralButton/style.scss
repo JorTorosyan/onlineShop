@@ -1,0 +1,9 @@
+.netral_btn {
+	cursor: pointer;
+	span {
+		color: #434343;
+		&:hover {
+			color: #be3943;
+		}
+	}
+}

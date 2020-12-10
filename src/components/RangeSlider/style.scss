@@ -1,0 +1,32 @@
+.MuiSlider-thumb {
+  width: 18px !important;
+  height: 18px !important;
+  border: 4px solid #ae0814 !important;
+  color: white;
+}
+.MuiSlider-root {
+  margin-left: 10px;
+}
+
+.MuiSlider-colorPrimary {
+  color: #ae0814 !important;
+}
+.MuiSlider-track {
+  height: 8px !important;
+}
+.MuiSlider-rail {
+  height: 8px !important;
+}
+.MuiSlider-thumb:hover {
+    color: white !important;  
+}
+.MuiSlider-thumb:hover {
+    box-shadow: none !important;
+}
+.labelValues{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
